@@ -4,9 +4,6 @@ import com.leonelvalora.kaprekars_constant.exceptions.KaprekarsConstantException
 
 import java.util.*;
 import java.util.regex.Pattern;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class KaprekarsContant {
     static final int VALUE = 6174;
@@ -19,8 +16,8 @@ public class KaprekarsContant {
         validateInput(strNumber); //Exception
 
         StringBuilder stringBuilder = new StringBuilder();
-        int ascNum = 0;
-        int descNum = 0;
+        int ascNum;
+        int descNum;
 
         do {
             char[] chars = strNumber.toCharArray();
